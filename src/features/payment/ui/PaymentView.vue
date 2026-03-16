@@ -86,9 +86,7 @@ const handlePay = async () => {
   }
 }
 
-const emit = defineEmits<{
-  (e: 'update:step', val: number): void
-}>()
+
 
 const openPaymentSheet = () => {
   if (window.innerWidth < 1024) isPaymentSheetOpen.value = true

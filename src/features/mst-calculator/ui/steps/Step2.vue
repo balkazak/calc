@@ -486,7 +486,7 @@ onMounted(async () => {
           @click="showEditContactModal = true"
           class="text-blue-500 hover:text-blue-600"
         >
-          <ri-edit-2-fill class="text-xl" />
+          <RiEdit2Fill class="text-xl" />
         </button>
       </div>
     </div>

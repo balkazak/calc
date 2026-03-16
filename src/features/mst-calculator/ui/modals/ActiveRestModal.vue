@@ -3,7 +3,7 @@ import { NButton } from 'nomad-ui'
 import { useMstI18n } from '../../model/composables/useMstI18n'
 import RiCloseLine from '~icons/ri/close-line'
 
-const props = defineProps<{
+defineProps<{
   open: boolean
 }>()
 

@@ -247,7 +247,7 @@ const amountDropdownHeader = computed(() => {
             <div
               class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center shadow-sm mb-4 mx-auto text-2xl text-gray-400"
             >
-              <ri-upload-cloud-2-fill />
+              <RiUploadCloud2Fill />
             </div>
             <h4 class="text-sm font-semibold mb-1">
               {{ t.step1.studentDoc }}
