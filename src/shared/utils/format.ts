@@ -46,3 +46,17 @@ export function pluralize(count: number, words: readonly string[]) {
 function countsToString(count: number, word: string) {
   return `${count} ${word}`
 }
+
+export const phoneMaskaOptions = {
+  mask: '+7 (###) ###-##-##',
+  preprocessor: (val: string) => {
+    const digits = val.replace(/\D/g, '')
+    if (digits.length === 11 && (digits.startsWith('7') || digits.startsWith('8'))) {
+      const match = val.match(/^[\+]*[78][\s\-\(\)]*/)
+      if (match) {
+        return val.slice(match[0].length)
+      }
+    }
+    return val
+  }
+}

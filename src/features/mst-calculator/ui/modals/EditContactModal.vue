@@ -2,6 +2,7 @@
 import { ref, watch } from 'vue'
 import { NInput, NButton } from 'nomad-ui'
 import { vMaska } from 'maska/vue'
+import { phoneMaskaOptions } from '../../../../shared/utils/format'
 import { useMstI18n } from '../../model/composables/useMstI18n'
 
 const props = defineProps<{
@@ -67,7 +68,7 @@ const handleSave = () => {
             <div class="space-y-4 mb-6">
               <NInput
                 v-model="phone"
-                v-maska="'+7 (###) ###-##-##'"
+                v-maska="phoneMaskaOptions"
                 type="tel"
                 placeholder="+7 (___) ___-__-__"
                 :label="t.step2.phoneLabel"

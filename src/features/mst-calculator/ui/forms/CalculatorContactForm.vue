@@ -2,6 +2,7 @@
 import { useStep2Logic } from '../../model/composables/useMstContacts'
 import { NButton, NInput } from 'nomad-ui'
 import { vMaska } from 'maska/vue'
+import { phoneMaskaOptions } from '../../../../shared/utils/format'
 import { useMstI18n } from '../../model/composables/useMstI18n'
 import RiErrorWarningFill from '~icons/ri/error-warning-fill'
 
@@ -36,7 +37,7 @@ const handleConfirmContact = async () => {
       <div class="space-y-1">
         <NInput
           v-model="contactPhone"
-          v-maska="'+7 (###) ###-##-##'"
+          v-maska="phoneMaskaOptions"
           type="tel"
           placeholder="+7 (___) ___ - __ - __"
           :label="t.step2.phoneLabel"

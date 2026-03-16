@@ -2,6 +2,7 @@
 import { ref, computed, watch } from 'vue'
 import { NButton, NInput } from 'nomad-ui'
 import { vMaska } from 'maska/vue'
+import { phoneMaskaOptions } from '../../../../shared/utils/format'
 import type { TouristManualData, TouristKdpData } from '../../model/mst.types'
 import { useMstI18n } from '../../model/composables/useMstI18n'
 import RiCloseFill from '~icons/ri/close-fill'
@@ -184,7 +185,7 @@ const handleSubmit = () => {
               :label="t.step2.phoneBmgLabel"
               type="tel"
               placeholder="+7 (___) ___ - __ - __"
-              v-maska="'+7 (###) ###-##-##'"
+              v-maska="phoneMaskaOptions"
             />
 
             <div
