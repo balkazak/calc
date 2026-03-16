@@ -1,0 +1,5 @@
+export { default as EditContactModal } from './EditContactModal.vue'
+export { default as EditPolicyholderModal } from './EditPolicyholderModal.vue'
+export { default as SmsProcessingModal } from './SmsProcessingModal.vue'
+export { default as SmsVerificationModal } from './SmsVerificationModal.vue'
+export { default as TouristDataClarificationModal } from './TouristDataClarificationModal.vue'
